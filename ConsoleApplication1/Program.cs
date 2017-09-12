@@ -1,23 +1,91 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
-namespace ConsoleApplication1
+public class MaProgram
 {
-    class Program
+
+    public static void Main (string[] args)
     {
-        static void Main(string[] args)
-        {
-            char k; 
-            Console.WriteLine("Pls type a character.");
-            k = char.Parse(Console.ReadLine());
-            Console.WriteLine(" ");
-            Console.WriteLine("  " + k);
-            Console.Write(" " + k); Console.WriteLine(k);
-            Console.Write(k); Console.Write(k); Console.WriteLine(k);
-            Console.ReadLine();
-        }
+        char k;
+        float p;
+        Console.WriteLine("Pls type a character.");
+        k = char.Parse(Console.ReadLine());
+        Console.WriteLine("Pls type how long the triangle is");
+        p = float.Parse(Console.ReadLine());
+        Console.WriteLine(" ");
+        Console.WriteLine("  " + k);
+        Console.Write(" " + k); Console.Write(k); Console.WriteLine(k);
+        Console.Write(k); Console.Write(k); Console.Write(k); Console.Write(k); Console.WriteLine(k);
+        Console.WriteLine(" ");
+        Console.WriteLine("The shetah of the triangle is: " + p * p / 2 + "the hekeph is: " + p * 3);
+
+        Console.ReadLine();
     }
+
+
+}
+
+using System;
+
+public class MaProgram
+{
+
+    public static void Main (string[] args)
+    {
+        double r, e;
+        Console.WriteLine("Pls type how much 1 dollar is in shekels.");
+        r = double.Parse(Console.ReadLine());
+        Console.WriteLine("How much does the trip cost? (in dollars)");
+        e = double.Parse(Console.ReadLine());
+        Console.WriteLine("The trip cost" + r * e + "in shekels.");
+        Console.ReadLine();
+
+    }
+
+
+}
+
+
+using System;
+
+public class MaProgram
+{
+
+    public static void Main (string[] args)
+    {
+        double r, e;
+        e = 1.6;
+        Console.WriteLine("pls type how long your car has driven.(in miles)");
+        r = double.Parse(Console.ReadLine());
+        Console.WriteLine("Your car drived " + e * r + " kilometers.");
+        Console.ReadLine();
+        
+            
+    }
+
+
+}
+
+
+using System;
+
+public class MaProgram
+{
+
+    public static void Main (string[] args)
+    {
+        double day, night, shabat;
+        double dayhour, nighthour, shabathour;
+        Console.WriteLine("How much does a worker get for 1 hour a day?");
+        day = double.Parse(Console.ReadLine());
+        night = 1.5 * day;
+        shabat = 2 * day;
+        Console.WriteLine("pls write how much hours does the worker work for 1 day, night, shabat(in this order");
+        dayhour = double.Parse(Console.ReadLine());
+        nighthour = double.Parse(Console.ReadLine());
+        shabathour = double.Parse(Console.ReadLine());
+        Console.WriteLine("The worker has gained " + (dayhour * day + nighthour * night + shabathour * shabat) + " shekels past the last week");
+        Console.ReadLine();
+    }
+
+
 }
