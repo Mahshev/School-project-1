@@ -92,3 +92,20 @@ public class MaProgram
 }
 
 
+using System;
+
+public class MaProgram
+{
+
+    public static void Main(string[] args)
+    {
+        int twonumber, sh, helkten;
+        Console.WriteLine("Please put a two digit number:");
+        twonumber = int.Parse(Console.ReadLine());
+        sh = twonumber % 10;
+        helkten = twonumber / 10;
+        Console.WriteLine("the sum of the two digit number is " + (sh + helkten));
+    }
+
+
+}
