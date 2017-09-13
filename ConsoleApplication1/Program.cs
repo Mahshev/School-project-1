@@ -29,14 +29,15 @@ using System;
 public class MaProgram
 {
 
-    public static void Main (string[] args)
+    public static void Main(string[] args)
     {
-        double r, e;
+        double dollar, trip, kitzba;
         Console.WriteLine("Pls type how much 1 dollar is in shekels.");
-        r = double.Parse(Console.ReadLine());
+        dollar = double.Parse(Console.ReadLine());
         Console.WriteLine("How much does the trip cost? (in dollars)");
-        e = double.Parse(Console.ReadLine());
-        Console.WriteLine("The trip cost" + r * e + "in shekels.");
+        trip = double.Parse(Console.ReadLine());
+        kitzba = 400;
+        Console.WriteLine("The trip cost " + (dollar * trip + kitzba * dollar) + " in shekels.");
         Console.ReadLine();
 
     }
@@ -89,3 +90,5 @@ public class MaProgram
 
 
 }
+
+
