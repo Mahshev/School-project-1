@@ -109,3 +109,82 @@ public class MaProgram
 
 
 }
+
+//3 digit number sum.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number, mea, ten, one, help;
+            Console.WriteLine("Please type a number with 3 digits.");
+                number = int.Parse(Console.ReadLine());
+                mea = number / 100;
+                one = number % 10;
+                help = number % 100;
+                ten = help / 10;
+                Console.WriteLine("The sum of the numbers in the 3 digit number is: " + (mea + ten + one));
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //2 digit swap * 2
+            int number, ten, one, number1, final;
+            Console.WriteLine("Please enter a 2 digit number.");
+            number = int.Parse(Console.ReadLine());
+            ten = number / 10;
+            one = number % 10;
+            number1 = one * 10 + ten;
+            final = number1 * 2;
+            Console.WriteLine("The final number is: " + final);
+
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //2 digit number to 3 digit / 2
+            int number, ten, mea, final;
+            Console.WriteLine("Please write a 2 digit number.");
+            number = int.Parse(Console.ReadLine());
+            ten = number / 10;
+            mea = ten * 100 + number;
+            final = mea / 2;
+            Console.WriteLine("The final number is: " + final);
+        }
+    }
+}
+
+
+
